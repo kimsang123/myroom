@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        #wrap {
+            width: 100%;
+            height: 1000px;
+            padding-top:50px;
+            background-color: bisque;
+        }
+        #cont {
+            width: 500px;
+            height: 780px;
+            background-color: #ffffff;
+            border: solid 1px gray;
+            border-radius:10px; 
+            margin: 0 auto;
+        }
+        .first {
+            padding-top:40px;
+        }
+        .end {
+            margin: 0 auto;
+            padding-left:148px; 
+        }
+        .textbox {
+            width: 400px;
+            padding-bottom:10px;
+            margin: 0 auto;
+        }
+
+        .textbox_sub ul{
+            margin-left:-20px; 
+            list-style: none;
+        }
+
+        .textbox_sub ul li{
+            width: 300px;
+            padding: 2px;
+        }
+
+        .textbox_sub ul li span{
+            float: right;
+        }
+
+        .textbox_sub label{
+            padding-bottom: 5px;
+        }
+
+        .btn01 {
+            padding-right:10px;
+        }
+
+        .btn02 {
+        }
+
+
+        input[type=submit], input[type=reset]{
+            width: 100px;
+            border: solid 1px gray;
+            padding: 12px;
+        }
+
+        input[type=date]{
+            width: 168px;
+        }
+    </style>
+</head>
+<body>
+<div id="wrap">
+    <div id="cont">
+    <!-- form 태그 필요 속성 3가지 추가. -->
+    <form action="" method="" enctype="">
+
+        <!-- 로그인 -->
+        <div class="textbox first">
+            <fieldset>
+                <legend>로그인</legend>
+                    <div class="textbox_sub">
+                        <ul>
+                            <li>
+                                <label>아이디 : <span><input type="text" name="" value=""></span></label>
+                            </li>
+                            <li>
+                                <label>패스워드 : <span><input type="password" name="" value=""></span></label>
+                            </li>
+                        </ul>
+                    </div>
+            </fieldset>
+        </div>
+
+        <!-- 회원가입 -->
+        <div class="textbox">
+            <fieldset>
+                <legend>회원가입</legend>
+                    <div class="textbox_sub">
+                        <ul>
+                            <li>
+                                <label>아이디 : <span><input type="text" name="" value=""></span></label>
+                            </li>
+                            <li>
+                                <label>패스워드 : <span><input type="password" name="" value=""></span></label>
+                            </li>
+                            <li>
+                                <label>패스워드 확인 : <span><input type="password" name="" value=""></span></label>
+                            </li>
+                            <li>
+                                <label>이름 : <span><input type="text" name="" value="이름을 입력하세요."></span></label>
+                            </li>
+                            <li>
+                                <label>이메일 : <span><input type="text" name="" value=""></span></label>
+                            </li>
+                            <li>
+                                <label>전화번호 : <span><input type="text" name="" value=""></span></label>
+                            </li>
+                            <li>
+                                <label>생년월일 : <span><input type="date" name="" value=""></span></label>
+                            </li>
+                        </ul>
+                    </div>
+            </fieldset>
+        </div>
+
+        <!-- 수강신청 -->
+        <div class="textbox">
+            <fieldset>
+                <legend>수강 신청</legend>
+                <div class="textbox_sub">
+                    <ul>
+                        <li>
+                            <label>영어 초급 :<input type="radio" name="subject" value=""></label><br>
+                            <label>영어 중급 :<input type="radio" name="subject" value="" checked></label><br>
+                            <label>영어 고급 :<input type="radio" name="subject" value=""></label><br>
+                        </li>
+                    </ul>
+                </div>
+                <div class="textbox_sub">
+                    <ul>
+                        <li>
+                            <label>영어 초급 :<input type="checkbox" name="subject01" value=""></label><br>
+                        </li>
+                        <li>
+                            <label>영어 중급 :<input type="checkbox" name="subject02" value=""></label><br>
+                        </li>
+                        <li>
+                            <label>영어 고급 :<input type="checkbox" name="subject03" value=""></label><br>
+                        </li>
+                    <ul>                            
+                </div>
+            </fieldset>
+        </div>
+
+        <!-- selec박스 -->
+        <div class="textbox">
+            <fieldset>
+                <select>
+                    <optgroup label="공과대학"></optgroup>
+                    <option value="a">건축과</option>
+                    <option value="b">토목과</option>
+                    <optgroup label="자연과학"></optgroup>
+                    <option value="c">수학과</option>
+                    <option value="d">생물학과</option>
+                </select>
+            </fieldset>
+        </div>
+
+        <!-- 전송 버튼 : form 을 완료 -->
+        <div class="textbox end">
+            <span class="btn01"><input type="submit" name="" value="전송"></span>
+        <!-- 초기화 버튼 :  form 입력 값을 초기화  -->
+            <span class="btn02"><input type="reset" name="" value="초기화""></span>
+        </div>
+
+    </form>
+    </div>
+</div>
+</body>
+</html>

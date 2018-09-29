@@ -3,6 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <title>상태선택자</title>
+    <style>
+        /* 브라우저 스타일 초기화 */
+        * {margin: 0; padding: 0;}
+
+        body {
+            padding :20px;
+        }
+        ul li {
+            list-style-type: none;
+            display: inline-block;
+            padding: 50px 20px 50px 20px;
+            background-color: brown;
+            margin-left: -4px;
+        }
+
+        /* 홀수 */
+        ul > li:nth-child(odd) {
+            background-color: lightblue;
+        } 
+        
+        /* 짝수 */
+        ul > li:nth-child(even) {
+            background-color: red;
+        } 
+        
+        /* 첫번째, 라운드 */
+        ul > li:first-child {
+            background-color: darkcyan;
+            border-radius:10px 0 0 10px; 
+        } 
+
+        /* 마지막, 라운드 */
+        ul > li:last-child {
+            background-color: red;
+            border-radius:0 10px 10px 0; 
+        } 
+    </style>
 </head>
 <body>
     <ul>
@@ -16,4 +53,4 @@
         <li>8번째</li>
     </ul>
 </body>
-</html>
+</html>

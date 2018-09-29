@@ -3,6 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <title>CSS3 반응 선택자</title>
+    <style>
+        h1:hover{
+            color: red;
+        }
+        a:hover {
+            color: red;
+        }
+        a:visited {
+            color: pink;
+        }
+        a:link {
+            color: orange;
+        }
+
+        input:focus {
+            background-color: yellow;
+        }
+
+        input[disabled] {
+            background-color: #808080;
+        }
+        
+        input[checked] {
+            border: 1px solid #ff0000;
+
+        }
+    </style>
 </head>
 <body>
     <h1>반응 선택자</h1>
@@ -33,4 +60,4 @@
     </pre>
     <input type="checkbox" name="" checked="checked" />
 </body>
-</html>
+</html>

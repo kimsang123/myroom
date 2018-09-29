@@ -2,7 +2,42 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>»óÅÂ ¼±ÅÃÀÚ: ½ºÆ®¶óÀÌÇÁ Å×ÀÌºí ¸¸µé±â</title>
+    <title>ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½: ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ìºï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½</title>
+    <style>
+        /* ìƒíƒœ ì„ íƒìž --> : ë¡œ í‘œê¸°*/
+
+
+        thead tr th {
+            color: white;
+            padding: 5px;
+        }
+
+        thead th:nth-child(odd) {
+            background-color: gray;
+        }
+
+        thead th:nth-child(even) {
+            background-color: black;
+        }
+
+        tbody tr td {
+            padding: 5px;
+        }
+
+        /* ë¬¸ì œ1. í™€ìˆ˜ trì„ ì°¾ê³  ë°°ê²½ìƒ‰ìœ¼ë¡œ redë¥¼ ì„¤ì •*/
+        tbody > tr:nth-child(odd){
+            background-color: red;
+        }
+        /* ë¬¸ì œ2. ì§ìˆ˜ trì„ ì°¾ê³  ë°°ê²½ìƒ‰ìœ¼ë¡œ lightblueë¥¼ ì„¤ì •*/
+        tbody > tr:nth-child(even){
+            background-color: lightblue;
+        }
+
+        /* ë°˜ì‘ ì„ íƒìž --> : */
+        tbody > tr:hover {
+            background-color: darkgray;
+        }
+    </style>
 </head>
 <body>
     <table>
@@ -39,4 +74,4 @@
         </tbody>
     </table>
 </body>
-</html>
+</html>

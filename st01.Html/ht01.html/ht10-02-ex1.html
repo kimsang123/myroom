@@ -4,15 +4,20 @@
 <meta charset="utf-8">
 <title></title>
 <style>
-    * {border: 1px solid black; padding: 10px; margin-bottom: 10px;}
-    html,body { height: 100%; }
-    header { height: 60px; }
-    nav { }
+    * { padding: 10px; margin-bottom: 10px;}
+    html,body { border: 1px solid black; font-size: 18px; font-weight: bold;}
+    header { height: 60px; border: 1px solid black; text-align: center; padding-top: 40px;}
+    nav { height: 60px; border: 1px solid black; text-align: center; padding-top: 40px;}
 
-    #wrapbody {overflow: auto; }
-    section {width: 46%; float: left; vertical-align: bottom; display: }
-    aside {width: 46%; height:100%; float: right; }
-    article {width: 80%; margin-left:auto; margin-right:auto;}
+    #wrapbody {overflow: auto;}
+    #wap { width: 1250px; margin: 0 auto;}
+    #cont { height: 400px;}
+    section {width: 64%; float: left; vertical-align: bottom; display:inline-block; height:100%; border: 1px solid black; margin-left:-10px;  }
+    aside {width: 30%; height:100%; float: right; border: 1px solid black; text-align: center; margin-right:-10px;}
+    article {width: 80%; margin-left:auto; margin-right:auto; border: 1px solid black; text-align: center;}
+    .article1 {margin-top: 100px; padding: 30px;}
+    .article2 {margin-top: 20px; padding: 30px;}
+    .txt {vertical-align: middle;}
 
     .col-container {
         display: table; /* Make the container element behave like a table */
@@ -23,8 +28,20 @@
         display: table-cell; /* Make elements inside the container behave like table cells */
     }
 
-    footer {height: 30px; clear: both;}
+    footer {height: 40px; clear: both; border: 1px solid black; text-align: center; padding-top: 40px;}
 </style>
 </head>
-<body>
+<body id="wrapbody">
+<div id="wrap">
+    <header>header</header>
+    <nav>navigation</nav>
+    <div id="cont">
+        <section>section
+            <article class="article1">article1</article>
+            <article class="article2">article2</article>
+        </section>
+        <aside class="col txt">aside</aside>
+    </div>
+    <footer>footer</footer>
+</div>
 </body>

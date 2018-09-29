@@ -4,19 +4,50 @@
     <meta charset="utf-8">
     <title>내가 처음 만드는 HTML 문서</title>
     <style>
+        body{font-family: Arial, Helvetica, sans-serif;}
+        #wrap{width: 100%;}
+        #main{width:700px; margin: 0 auto; border: 2px solid orange; padding: 30px;}
+        .title{padding: 3px 0 10px 0; margin: -20px 0 0 -20px; }
+        header{width: 600px; background-color: firebrick; height: 60px;}
+        header h1{font-size: 28px;}
+        nav{width: 600px; height: 50px; margin-left: -30px; padding-top: 10px; }
+        nav ul{list-style: none;}
+        nav ul li{ float: left; padding-right: 15px; color: black; display: inline-block; }
+        nav ul li a {text-decoration:none; color: black; font-weight: bold;}
+        section {width: 600px; }
+        .cont{border: 1px solid gray;width: 300px; padding: 15px; margin-top: 20px; margin-left: 8px; }
+        article ul {margin-left: -10px;}
+        article ul li {line-height: 23px; font-size: 12px;}
+        footer{width: 600px; background-color: black; height: 60px;}
+        footer p{color: white; text-align: center; padding-top:18px; font-size: 12px; line-height: 20px;}
+        footer p span{padding-left: 100px;}
+
+        .test{text-align: center; display: none;}
+        .test1{display: inline-block; vertical-align: middle; color: white;}
+        .test2{display: inline-block; vertical-align: middle; height: 100%;}
     </style>
 </head>
 <body>
+<div id="wrap">
+    <div id="main">
+    <div class="title">시만택 태그를 이용하여 아래 그림처럼 구성하시오.</div>
+    <header>
         <h1>입양하기</h1>
-
+    </header>
+    <nav>
         <ul>
             <li><a href="#">애완견 종류</a></li>
             <li><a href="#">입양하기</a></li>
             <li><a href="#">건강돌보기</a></li>
             <li><a href="#">더불어살기</a></li>
         </ul>
-
+    </nav>
+    <div class="cont">
+    <section>
+        <article>
             <h2>강아지 용품 준비하기</h2>
+        </article>
+        <article>
             <ul>
                 <li>강아지 집 </li>
                 <li>강아지 먹이 </li>
@@ -28,7 +59,19 @@
                 <li>귀 세정액, 구강스프레이, 기타 영양제 </li>
                 <li>샴푸, 린스, 애견용 타올 </li>
             </ul>
+        </article>
+    <section>
+    </div>
+    <footer>
+        <p><span>Copyright 2012 funnycom</span></p>
+    </footer>
 
-        <p>Copyright 2012 funnycom</p>
+    <footer class="test">
+        <span class="test1">Copyright 2012 funnycom</span>
+        <span class="test2"></span>
+    </footer>
+    </div>
+
+</div>
 </body>
 </html>

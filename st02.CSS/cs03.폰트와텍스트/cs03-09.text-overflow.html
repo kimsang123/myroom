@@ -1,7 +1,25 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 </head>
+<style>
+    .a {
+        width: 100px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        
+        /*버튼효과*/
+        padding: 5px;
+        border: 1px solid gray;
+        border-radius:3px;
+    }
+    .a:hover {
+        overflow: visible;
+    }
+</style>
+
 <body>
     <h1>The text-overflow</h1>
 
@@ -9,4 +27,5 @@
 
     <div class="a">This is some long text that will not fit in the box.</div>
 </body>
+
 </html>

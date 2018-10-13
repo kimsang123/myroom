@@ -9,18 +9,28 @@
         body {
             margin: 0;
             padding: 0;
-            background: url (images/flame.jpg) center center fixed no-repeat;
+            /*background: url (images/flame.jpg) center center fixed no-repeat;*/
         }
 
-        video {
+       #bg {
             position: fixed;
-            top: 0;
-            left: 0;
-            min-width: 100 %;
-            min-height: 100 %;
-            width: auto;
-            height: auto;
+            top: 0; /* x축 */
+            left: 0; /* y축 */
+            min-width: 100%; /* x축 꽉찬 화면 */
+            min-height: 100%; /* y축 꽉찬 화면 */
+            width: auto; /* 기본값 */
+            height: auto; /* 기본값 */
             z-index: -1;
+
+            background-image: url (images/flame.jpg);
+            background-repeat:no-repeat; /* 배경이미지 한번만 출력 */
+            background-position:left top ;
+            background-size:cover; /* 자동 넓히기 */
+        }
+
+        #container{
+            float: right;
+            text-align:end;
         }
     </style>
 </head>
@@ -35,7 +45,7 @@
     5. 동영상을 재생할 수 없을 때 표시할 배경 이미지 추가하기.
     6. 텍스트 위치 지정하기.
     </pre>
-    <video id="bg" src="Painting.mp4" autoplay loop muted poster="images/flame.jpg"></video>
+    <video id="bg" src="images/flame.mp4" autoplay loop muted poster="images/flame.jpg"></video>
     <div id="container">
         <h2>사람을 도와주는</h2>
         <h1><a href="http://www.pub.co.kr">퍼블리싱</a></h1>

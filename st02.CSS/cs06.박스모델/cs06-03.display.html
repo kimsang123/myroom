@@ -3,10 +3,74 @@
     <head>
         <meta charset="utf-8">
         <title>display 속성</title>
+        <style>
+            *{
+                font-family: "나눔고딕"
+            }
+            body{
+                width: 100%;
+            }
+            #wrap{
+                width: 1100px;
+                margin: 0 auto;
+            }
+            #inlineblock {
+                float: left;
+                display: inline-block;
+                margin: 0 auto;
+                width: 780px;
+                height: 50px;
+                border: 1px solid lightgray;
+                border-radius:5px; 
+            }
+
+            #inline {
+                float: left;
+                width: 770px;
+                margin:150px 0 0 0;
+                padding: 5px;
+                border: 1px solid lightgray;
+                border-radius:5px;
+
+            }
+
+            #block {
+                float: right;
+                width: 200px;
+                display: block;
+                border: 1px solid lightgray;
+                padding: 10px;
+                margin: -60px 0 0 0;
+                border-radius:5px;
+            }
+
+            #block img{
+                width:200px;
+            }
+            nav{
+                width: 782px;
+                margin: 0 0 0 -1px;
+                color: white;
+                background-color:rgb(39, 39, 90);
+                border-bottom-right-radius:5px;
+                border-bottom-left-radius:5px;
+            }
+
+            nav ul li{
+                padding: 20px;
+                display: inline-block;
+                text-decoration: none;
+            }  
+            nav ul li a{
+                color: white;
+                text-decoration: none;
+            }  
+        </style>
     </head>
     <body>
+        <div id="wrap">
         <h2>display 속성</h2>
-
+        
         <div id="inlineblock">
             <nav>
                 <ul>
@@ -28,5 +92,6 @@
             <img src="../images/pic2.jpg">
             <img src="../images/pic3.jpg">
         </div>
+        <div>
     </body>
-</html>
+</html>

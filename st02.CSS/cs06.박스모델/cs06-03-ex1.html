@@ -3,10 +3,82 @@
 <head>
     <meta charset="utf-8">
     <title>display 속성</title>
+    <style>
+        body{
+            width: 100%;
+        }
+        #test1{
+            width: 800px;
+            height: 200px;
+            margin: 0 auto;
+        }
+        #test2{
+            width: 800px;
+            height: 200px;
+            margin: 0 auto;
+        }
+        /*부모의 flex를 감싸야 함*/
+        #test3{
+            width: 800px;
+            height: 200px;
+            margin: 0 auto;
+            display: flex;
+
+            flex-direction:row; /*방향 조정 row는 가로 column은 세로*/
+        }
+
+        #test1 > div{
+            float: left;
+            width: 100px;
+            height: 100px;
+            margin: 10px 5px;
+            padding: 5px;
+            border: 2px solid black;
+        }
+        #test2 > div{
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            margin: 10px 5px;
+            padding: 5px;
+            border: 2px solid black;
+        }
+        #test3 > div{
+            
+            width: 100px;
+            height: 100px;
+            margin: 10px 5px;
+            padding: 5px;
+            border: 2px solid black;
+        }
+        .ex1{
+            background-color: lightblue;
+        }
+        .ex2{
+            background-color: lightgreen;
+        }
+        .ex3{
+            background-color: lightyellow;
+        }
+    </style>
 </head>
 <body>
+    <div id="test1">
+    <h1>float:left 사용</h1>
     <div class="ex1">첫번째</div>
     <div class="ex2">두번째</div>
     <div class="ex3">세번째</div>
+</div>
+<div id="test2">
+    <h1>display:inline-block 사용</h1>
+    <div class="ex1">첫번째</div>
+    <div class="ex2">두번째</div>
+    <div class="ex3">세번째</div>
+</div>
+<div id="test3">
+    <div class="ex1">첫번째</div>
+    <div class="ex2">두번째</div>
+    <div class="ex3">세번째</div>
+</div>
 </body>
-</html>
+</html>
